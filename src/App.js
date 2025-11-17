@@ -1,4 +1,5 @@
-function Calculator() {
+import React from 'react'
+function App() {
   const [display, setDisplay] = React.useState('0');
   const [prevValue, setPrevValue] = React.useState(null);
   const [operation, setOperation] = React.useState(null);
@@ -175,5 +176,4 @@ function Calculator() {
     )
   );
 }
-
-ReactDOM.render(React.createElement(Calculator), document.getElementById('root'));
+export default App;
